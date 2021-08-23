@@ -12,7 +12,7 @@
  */
 require_once 'data/config.php';
 require_once 'inc/mclogparse.inc.php';
-date_default_timezone_set('Asia/Bangkok');
+date_default_timezone_set('America/Chicago');
 /*
 8888888888 d8b 888                                     888
 888        Y8P 888                                     888
@@ -529,7 +529,7 @@ function user_add($user,$pass,$role,$home,$ram=512,$port=25565,$version) {
 	if (!file_exists($_POST['dir'])) {
     mkdir($_POST['dir'], 0777, true);
 	}
-	
+
 	// make a ngrok config file
 	file_put_contents($_POST['dir'] . '/ngrok.yml',
 "authtoken: 1234567890 \n
@@ -540,25 +540,18 @@ log: ".$_POST['dir']."/ngrok.log \n
 ");
 	// Accept eula
 	file_put_contents($_POST['dir'].'/eula.txt','eula=TRUE');
-	// Copy spigot
-	if ($_POST['version'] == '1.10.2') {
-		copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
-	} else if ($_POST['version'] == '1.11.2') {
-		copy('serverbase/spigot-1.11.2.jar',$_POST['dir'].'/spigot-1.11.2.jar');
-	} else if ($_POST['version'] == '1.12.2') {
-		copy('serverbase/spigot-1.12.2.jar',$_POST['dir'].'/spigot-1.12.2.jar');
-	} else if ($_POST['version'] == '1.14.4') {
-		copy('serverbase/spigot-1.14.4.jar',$_POST['dir'].'/spigot-1.14.4.jar');
-	} else if ($_POST['version'] == '1.9.4') {
-		copy('serverbase/spigot-1.9.4-R0.1-SNAPSHOT-latest.jar',$_POST['dir'].'/spigot-1.9.4.jar');
-	} else if ($_POST['version'] == '1.8.8') {
-		copy('serverbase/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar',$_POST['dir'].'/spigot-1.8.8.jar');
-	} else if ($_POST['version'] == '1.7.10') {
-		copy('serverbase/spigot-1.7.10-SNAPSHOT-b1657.jar',$_POST['dir'].'/spigot-1.7.10.jar');
-	} else if ($_POST['version'] == 'BC') {
-		copy('serverbase/BungeeCord.jar',$_POST['dir'].'/BungeeCord.jar');
-	}
-		
+	// Copy serverbase stuff
+	copy('serverbase/server-icon.png',$_POST['dir'].'/server-icon.png');
+	copy('serverbase/server.properties',$_POST['dir'].'/server.properties');
+	copy('serverbase/bukkit.yml',$_POST['dir'].'/bukkit.yml');
+	copy('serverbase/spigot.yml',$_POST['dir'].'/spigot.yml');
+	copy('serverbase/paper.yml',$_POST['dir'].'/paper.yml');
+	mkdir($_POST['dir'].'/plugins', 0777, true);
+	//copy('serverbase/plugins/*',$_POST['dir'].'/plugins/');
+	copy('serverbase/plugins/clearlagg.jar',$_POST['dir'].'/plugins/clearlagg.jar');
+	// Copy Spigot
+	copy('serverbase/paper.jar',$_POST['dir'].'/paper.jar');
+
 }
 
 // Delete a user

@@ -1,22 +1,26 @@
 {
-  "name": "MCGG",
-  "description": "A Web-based minecraft server",
+  "name": "Minecraft",
+  "description": "A Minecraft Paper Server on Heroku!",
   "keywords": [
     "games",
     "minecraft"
   ],
-  "logo": "https://raw.githubusercontent.com/Ren232/mcgg/master/logo.jpg",
-  "repository": "https://github.com/ren232/mcgg",
-  "stack": "heroku-18",
+  "logo": "https://github.com/SirDankenstien/PaperMC-on-Heroku/raw/master/logo.jpg",
+  "repository": "https://github.com/SirDankenstien/PaperMC-on-Heroku",
   "env": {
     "MINECRAFT_EULA": {
       "description": "Do you accept the Minecraft EULA?",
       "value": "true",
       "required": true
     },
-    "DROPBOX_API_TOKEN": {
-      "description": "Your personal dropbox API token  (Goto https://www.dropbox.com/developers/apps Click on create app, Select Dropbox API, Select App folder, Name the app & create it, Click on the app, Goto Generated access token, Click on Generate and Copy the key.) ",
+    "MINECRAFT_VERSION": {
+      "description": "Minecraft Paperclip Version",
+      "value": "1.16.4",
       "required": true
+    },
+    "DROPBOX_API_TOKEN": {
+      "description": "Your personal dropbox API token ( Go to https://www.dropbox.com/developers/apps , Click on create app, Select Dropbox API, Select App folder, Name the app & create it, Click on the app, Go to Generated access token, Click on Generate and Copy the key ) ",
+      "required": false
     },
     "DNSEXIT_DNS": {
       "description": "Your personal DnsExit DNS hostname (Not required)",
@@ -36,7 +40,7 @@
       "url": "heroku/jvm"
     },
     {
-      "url": "https://github.com/ren232/mcgg"
+      "url": "https://github.com/SirDankenstien/PaperMC-on-Heroku"
     },
     {
       "url": "https://github.com/heroku/heroku-buildpack-php"
