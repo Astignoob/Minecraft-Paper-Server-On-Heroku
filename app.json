@@ -40,10 +40,10 @@
       "url": "heroku/jvm"
     },
     {
-      "url": "https://github.com/SirDankenstien/Minecraft-Paper-Server-On-Heroku"
+      "url": "heroku/php"
     },
     {
-      "url": "https://github.com/heroku/heroku-buildpack-php"
+      "url": "https://github.com/SirDankenstien/Minecraft-Paper-Server-On-Heroku"
     }
   ]
 }
