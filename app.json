@@ -23,15 +23,15 @@
       "required": false
     },
     "DNSEXIT_DNS": {
-      "description": "Your personal DnsExit DNS hostname (Not required)",
+      "description": "Your personal DnsExit DNS hostname ( Not required )",
       "required": false
     },
     "DNSEXIT_USER": {
-      "description": "Your DnsExit Username (Not required)",
+      "description": "Your DnsExit Username ( Not required )",
       "required": false
     },
     "DNSEXIT_PASS": {
-      "description": "Your DnsExit User password (Not required)",
+      "description": "Your DnsExit User password ( Not required )",
       "required": false
     }
   },
