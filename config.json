@@ -5,7 +5,7 @@
   },
   "jar_updates": [
     "http://s3.amazonaws.com/MinecraftDownload/launcher/minecraft_server.jar",
-    "https://papermc.io/ci/job/Paper-1.16/lastSuccessfulBuild/artifact/paperclip.jar"
+    "https://papermc.io/ci/job/Paper-1.17.1/lastSuccessfulBuild/artifact/paperclip.jar"
   ],
   "commands": {
     "start": "",

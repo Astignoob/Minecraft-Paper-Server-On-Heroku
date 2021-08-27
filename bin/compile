@@ -82,7 +82,7 @@ build=$(curl "https://papermc.io/api/v2/projects/paper/versions/${minecraft_vers
 minecraft_url=https://papermc.io/api/v2/projects/paper/versions/${minecraft_version}/builds/${build}/downloads/paper-${minecraft_version}-${build}.jar
 
 echo -n "-----> Installing Paper ${minecraft_version}... "
-curl -o paper.jar -s -L $minecraft_url
+curl -o paperclip.jar -s -L $minecraft_url
 echo "done"
 
 optimization_plugin=${URL:-"https://dev.bukkit.org/projects/clearlagg/files/latest"}
@@ -109,7 +109,7 @@ mv $OPT_DIR/panel $BUILD_DIR/panel
 mkdir -p $BUILD_DIR/panel/serverbase/plugins
 mv clearlagg.jar $BUILD_DIR/panel/serverbase/plugins/clearlagg.jar
 mv dynmap.jar $BUILD_DIR/panel/serverbase/plugins/dynmap.jar
-mv paper.jar $BUILD_DIR/panel/serverbase/paper.jar
+mv paperclip.jar $BUILD_DIR/panel/serverbase/paperclip.jar
 mv $OPT_DIR/index.php $BUILD_DIR/index.php
 
 chmod +x $BUILD_DIR/dropbox

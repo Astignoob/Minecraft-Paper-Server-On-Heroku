@@ -273,7 +273,7 @@ if(isset($_POST['action'])) {
 					
 					<div class="controls">
 						<select name="version" id="version" class="span4">
-							<option value="1.17.1">PaperMC</option>
+							<option value="Paper">PaperMC</option>
 						</select>
 					</div>
 				</div>
