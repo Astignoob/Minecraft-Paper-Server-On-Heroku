@@ -8,9 +8,9 @@ Translated to English & Updated by Ren232.
 - You can access the file manager of the server.<br>
 - Console<br>- Admin panel with account registration<br>
 - Trial users & Premium users<br>
-- Server Map (Dynmap required)<br>
+- Server Map ( Dynmap required )<br>
 - Player list<br>
-- Version Selector ( Only has 1.16.4 for now )<br>
+- Version Selector ( Input your own version! )<br>
 - User deletion<br>
 - Easy to install<br>
 - And more!
@@ -26,7 +26,7 @@ Translated to English & Updated by Ren232.
 1. Click on the button below, Give the app a name (This is also going to be your panel's subdomain), Paste your Dropbox API key, and click on deploy.<br>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-2. Now goto https://APP_NAME.herokuapp.com/panel/install.php to create an account and server (Please notice that the total server ram is limited to 512 mb.)
+2. Now go to https://APP_NAME.herokuapp.com/panel/install.php to create an account and server (Please notice that the total server ram is limited to 512 mb.)
 
 3. Paste your ngrok key on the Dashboard page.
 
