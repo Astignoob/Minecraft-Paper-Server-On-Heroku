@@ -550,7 +550,7 @@ log: ".$_POST['dir']."/ngrok.log \n
 	//copy('serverbase/plugins/*',$_POST['dir'].'/plugins/');
 	copy('serverbase/plugins/clearlagg.jar',$_POST['dir'].'/plugins/clearlagg.jar');
 	// Copy Spigot
-	copy('serverbase/paper.jar',$_POST['dir'].'/paper.jar');
+	copy('serverbase/paperclip.jar',$_POST['dir'].'/paperclip.jar');
 
 }
 
