@@ -15,7 +15,7 @@
     },
     "MINECRAFT_VERSION": {
       "description": "Minecraft Paperclip Version",
-      "value": "1.16.4",
+      "value": "Replace this and type the exact version here! Available Versions can be found here https://papermc.io/downloads and here https://papermc.io/legacy",
       "required": true
     },
     "DROPBOX_API_TOKEN": {
@@ -38,9 +38,6 @@
   "buildpacks": [
     {
       "url": "heroku/jvm"
-    },
-    {
-      "url": "https://github.com/SirDankenstien/PaperMC-on-Heroku"
     },
     {
       "url": "https://github.com/heroku/heroku-buildpack-php"
