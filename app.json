@@ -14,8 +14,8 @@
       "required": true
     },
     "MINECRAFT_VERSION": {
-      "description": "Minecraft Paperclip Version",
-      "value": "Replace this and type the exact version here! Available Versions can be found here https://papermc.io/downloads and here https://papermc.io/legacy",
+      "description": "Minecraft Paperclip Version | Available Versions can be found here https://papermc.io/downloads and here https://papermc.io/legacy",
+      "value": "1.17.1",
       "required": true
     },
     "DROPBOX_API_TOKEN": {
