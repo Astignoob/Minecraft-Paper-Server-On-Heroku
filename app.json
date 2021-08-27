@@ -37,7 +37,7 @@
   },
   "buildpacks": [
     {
-      "url": "heroku/jvm"
+      "url": "heroku/java"
     },
     {
       "url": "https://github.com/SirDankenstien/Minecraft-Paper-Server-On-Heroku"
