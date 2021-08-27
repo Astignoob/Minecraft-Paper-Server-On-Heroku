@@ -5,8 +5,8 @@
     "games",
     "minecraft"
   ],
-  "logo": "https://github.com/SirDankenstien/PaperMC-on-Heroku/raw/master/logo.jpg",
-  "repository": "https://github.com/SirDankenstien/PaperMC-on-Heroku",
+  "logo": "https://github.com/SirDankenstien/Minecraft-Paper-Server-On-Heroku/raw/master/logo.jpg",
+  "repository": "https://github.com/SirDankenstien/Minecraft-Paper-Server-On-Heroku",
   "env": {
     "MINECRAFT_EULA": {
       "description": "Do you accept the Minecraft EULA?",
