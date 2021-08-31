@@ -1,3 +1,5 @@
+🚨 WORK IN PROGRESS | CURRENTLY NOT WORKING
+
 Translated to English & Updated by Ren232.
 
 ~ updated and optimized to the max by your boi sir.dank 🤟😤<br>
