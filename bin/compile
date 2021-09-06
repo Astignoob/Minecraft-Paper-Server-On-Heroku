@@ -77,7 +77,8 @@ done
 mkdir -p $BUILD_DIR/bin
 echo -n "-----> Installing ngrok... "
 curl --silent -o ngrok.zip -L "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip" | indent
-unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
+unzip ngrok.zip -d $BUILD_DIR/panel/ngrok > /dev/null 2>&1
+rm ngrok.zip
 echo "done"
 
 minecraft_version=${MINECRAFT_VERSION}
@@ -108,7 +109,6 @@ fi
 [ ! -f $BUILD_DIR/uploader_second ]     && cp $OPT_DIR/uploader_second $BUILD_DIR/
 
 mv $OPT_DIR/panel $BUILD_DIR/panel
-cp $BUILD_DIR/bin/ngrok $BUILD_DIR/panel/ngrok
 mkdir -p $BUILD_DIR/panel/serverbase/plugins
 mv clearlagg.jar $BUILD_DIR/panel/serverbase/plugins/clearlagg.jar
 mv dynmap.jar $BUILD_DIR/panel/serverbase/plugins/dynmap.jar
