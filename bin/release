@@ -5,5 +5,5 @@ cat <<EOF
 addons:
   - jawsdb:kitefin
   - scheduler:standard
-  - coralogix:free
+  - coralogix:free-30mbday
 EOF
