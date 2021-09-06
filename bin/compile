@@ -34,11 +34,11 @@ mkdir -p "$APT_CACHE_DIR/archives/partial"
 mkdir -p "$APT_STATE_DIR/lists/partial"
 
 echo "----- Minecraft Paper Server On Heroku -----"
-echo.
+echo ""
 echo "█▀▀  ▀  █▀▀█   █▀▀▄ █▀▀█ █▀▀▄ █ █  █   █ █▀▀█ █▀▀  █  █ █▀▀ █▀▀█ █▀▀"
 echo "▀▀█ ▀█▀ █▄▄▀ ▄ █  █ █▄▄█ █  █ █▀▄  █▄█▄█ █▄▄█ ▀▀█  █▀▀█ █▀▀ █▄▄▀ █▀▀"
 echo "▀▀▀ ▀▀▀ ▀ ▀▀ █ ▀▀▀  ▀  ▀ ▀  ▀ ▀ ▀   ▀ ▀  ▀  ▀ ▀▀▀  ▀  ▀ ▀▀▀ ▀ ▀▀ ▀▀▀"
-echo.
+echo ""
 sleep 3
 echo "-----> Updating and Upgrading system files..."
 apt-get $APT_OPTIONS update | indent
